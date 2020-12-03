@@ -16,6 +16,7 @@ export default function App() {
       <View style={styles.inputDiv}>
         <Text>Enter Name</Text>
         <TextInput
+          multiline
           style={styles.textInput}
           placeholder="Your Name"
           onChangeText={(val) => {
@@ -24,6 +25,7 @@ export default function App() {
         />
         <Text>Enter Age</Text>
         <TextInput
+          keyboardType="numeric"
           style={styles.textInput}
           placeholder="Your Age"
           onChangeText={(val) => {
